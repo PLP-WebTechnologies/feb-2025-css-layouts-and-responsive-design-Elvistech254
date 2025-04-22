@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Hero Section</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <h1>Economic Times Kenya</h1>
+  <p>
+    Welcome to the Economic Times Kenya website. Here you can find the latest
+    news and updates.
+  </p>
+  <p>
+    We are committed to providing you with the most accurate and up-to-date
+    information.
+  </p>
+  <p>Stay tuned for more updates!</p>
+  <img
+    src="https://images.pexels.com/photos/843227/pexels-photo-843227.jpeg?auto=compress&cs=tinysrgb&w=600"
+    alt="Economic Times Kenya"
+  />
+  <body>
+    <img
+      src="https://images.pexels.com/photos/843227/pexels-photo-843227.jpeg?auto=compress&cs=tinysrgb&w=600"
+      alt="Economic Times Kenya"
+      <!--
+      Navigation
+      Bar
+      --
+    />
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Quick links</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Build Smarter, Not Harder</h1>
+          <p>Launch your next idea with speed and style.</p>
+          <a href="#content" class="hero-btn">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="content">
+      <section class="content">
+        <h2>Main Content</h2>
+        <p>Here’s where the story continues...</p>
+      </section>
+    </main>
+
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
